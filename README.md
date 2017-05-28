@@ -1,9 +1,12 @@
 # verificationTweets
 ## Requirements:
-	python version >=3.5
-	pip3
-	Install and upgrade using:	
-	$ pip3 install --upgrade pip
+
+ - python version >=3.5
+ - pip3
+Install and upgrade using:	
+```sh
+$ pip3 install --upgrade pip
+```
 
 ## Steps
 Firstly I recommend installing virtualenv and creating a virtual environment
