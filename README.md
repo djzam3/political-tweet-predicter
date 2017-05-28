@@ -1,11 +1,11 @@
 # verificationTweets
-##Requirements:
+## Requirements:
 	python version >=3.5
 	pip3
 	Install and upgrade using:	
 	$ pip3 install --upgrade pip
 
-##Steps:
+## Steps
 Firstly I recommend installing virtualenv and creating a virtual environment
 ```sh
 $ sudo apt-get install python3-venv
@@ -31,7 +31,7 @@ $ >> nltk.download('all')
 ```
 This is the easiest way but time consuming as it downloads all corpa from NLTK
 
-##To run
+## To run
 To run the project make sure that the venv is activated and type:
 ```sh
 $ export FLASK_APP=webpage.py
@@ -42,6 +42,6 @@ This tells flask what to run, webpage.py will only run if the template and stati
 The command line output will direct you to the local webpage to put into any browser
 
 
-##Change modes
+## Change modes
 You will need to go into devTweet.py and under main() uncomment what type of classifier you would like
 After it has retrained relaunch the webpag with flask and the results should be from the most recently trained model
