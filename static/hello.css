@@ -1,0 +1,28 @@
+#wrap {
+	
+	width: 900px;
+	margin: 0 auto;
+	background-color: #0084b4;
+	border-radius: 10px;
+	color: white;
+}
+
+#head {
+	color: #0084b4
+}
+
+#box1 {
+	background-color: black;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+
+body {
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+	
+}
