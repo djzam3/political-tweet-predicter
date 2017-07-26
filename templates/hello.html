@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>Hello </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hello.css') }}">
+	<link href="https:fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+<div id="box1">
+Title
+</div>
+<br>
+<h1 id="head">Check verification of tweet</h1>
+
+	<br>	
+	<form method="POST">
+		<input type="text" name="twiterHandle" placeholder="@TwitterHandle">
+		<input type="submit" value="Submit">
+	</form>
+
+	
+	{% if twitHandle %}
+	<div id="wrap">
+		<h1>{{ twitHandle }} </h1>
+			<p>Showing the most recents from {{ twitHandle }}</p>
+			{% if full %}
+				<table>
+					<tr>
+						<th>Tweet</th>
+						<th>Verifiable</th>
+						<th>Accuracy</th>
+					</tr>
+					{% for post in posts %}
+						<tr>
+						<td>{{ post[0] }}</td>
+						<td>{{ post[1] }}</td>
+						<td>{{ post[2] }}</td>
+						</tr>
+					{% endfor %}
+				</table>
+			{% endif %}
+	</div>
+	{% endif %}
+	<br>
+	
+</body>
+</html>
